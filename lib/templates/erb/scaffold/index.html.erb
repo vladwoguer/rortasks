@@ -1,8 +1,9 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <p id="notice"><%%= notice %></p>
 
 <h1>Listing <%= plural_table_name.titleize %></h1>
 
-<table>
+<table class="w3-table-all">
   <thead>
     <tr>
 <% attributes.reject(&:password_digest?).each do |attribute| -%>
