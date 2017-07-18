@@ -1,3 +1,4 @@
+
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Bugs</h1>
@@ -28,7 +29,7 @@
       <th>Deadline</th>
       <th>Additionalcomments</th>
       <th>Status</th>
-      <th colspan="3"></th>
+      <th></th>
     </tr>
   </thead>
 
@@ -58,9 +59,16 @@
         <td><%= bug.deadline %></td>
         <td><%= bug.additionalcomments %></td>
         <td><%= bug.status %></td>
-        <td><%= link_to 'Show', bug %></td>
-        <td><%= link_to 'Edit', edit_bug_path(bug) %></td>
-        <td><%= link_to 'Destroy', bug, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>
+        <div class="w3-dropdown-hover">
+        <button class="w3-button">Actions</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <%= link_to 'Show', bug, :class=>"w3-bar-item w3-button"  %>:class=>"w3-bar-item w3-button"  %>
+         <td><%= link_to 'Edit', edit_bug_path(bug), :class=>"w3-bar-item w3-button" %>
+        <%= link_to 'Destroy', bug, method: :delete, data: { confirm: 'Are you sure?' },:class=>"w3-bar-item w3-button"   %>
+         </div>
+  </div>
+        </td>
       </tr>
     <% end %>
   </tbody>
@@ -69,3 +77,4 @@
 <br>
 
 <%= link_to 'New Bug', new_bug_path %>
+

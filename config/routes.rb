@@ -11,6 +11,42 @@ Rails.application.routes.draw do
   resources :bugzillausers
   resources :bugzillaproducts
   resources :bugs
+  resources :testcases
+  resources :salesforceusers
+  resources :quizzes
+  resources :projects
+  resources :products
+  resources :leads
+  resources :issues
+  resources :courses
+  resources :campaigns
+  resources :bugzillausers
+  resources :bugzillaproducts
+  resources :bugs
+  resources :testcases
+  resources :salesforceusers
+  resources :quizzes
+  resources :projects
+  resources :products
+  resources :leads
+  resources :issues
+  resources :courses
+  resources :campaigns
+  resources :bugzillausers
+  resources :bugzillaproducts
+  resources :bugs
+  resources :testcases
+  resources :salesforceusers
+  resources :quizzes
+  resources :projects
+  resources :products
+  resources :leads
+  resources :issues
+  resources :courses
+  resources :campaigns
+  resources :bugzillausers
+  resources :bugzillaproducts
+  resources :bugs
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
