@@ -4,7 +4,11 @@
 
 <table>
   <thead>
+  <% if ['bug', 'issue', 'product' ,'campaign'].include? singular_table_name %>
+  <tr class="w3-hover-green">
+  <% else %>
     <tr>
+<% end %>
 <% attributes.reject(&:password_digest?).each do |attribute| -%>
       <th><%= attribute.human_name %></th>
 <% end -%>

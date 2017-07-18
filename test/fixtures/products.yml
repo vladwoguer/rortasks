@@ -11,14 +11,14 @@ one:
   taxclass: MyString
   urlkey: MyString
   visibility: MyString
-  setproductasnewfromdate: 2017-07-06
-  setproductasnewtodate: 2017-07-06
+  setproductasnewfromdate: 2017-07-17
+  setproductasnewtodate: 2017-07-17
   countryofmanufacture: MyString
   price: 1.5
   cost: 1.5
   specialprice: 1.5
-  specialpricefromdate: 2017-07-06
-  specialpricetodate: 2017-07-06
+  specialpricefromdate: 2017-07-17
+  specialpricetodate: 2017-07-17
   applymap: MyString
   displayactualprice: 1.5
   suggestedretailprice: 1.5
@@ -32,8 +32,8 @@ one:
   activationinformation: MyString
   color: MyString
   customdesign: MyString
-  activefrom: 2017-07-06
-  activeto: 2017-07-06
+  activefrom: 2017-07-17
+  activeto: 2017-07-17
   customlayoutupdate: MyString
   displayproductoptionsin: MyString
   pagelayout: MyString
@@ -62,14 +62,14 @@ two:
   taxclass: MyString
   urlkey: MyString
   visibility: MyString
-  setproductasnewfromdate: 2017-07-06
-  setproductasnewtodate: 2017-07-06
+  setproductasnewfromdate: 2017-07-17
+  setproductasnewtodate: 2017-07-17
   countryofmanufacture: MyString
   price: 1.5
   cost: 1.5
   specialprice: 1.5
-  specialpricefromdate: 2017-07-06
-  specialpricetodate: 2017-07-06
+  specialpricefromdate: 2017-07-17
+  specialpricetodate: 2017-07-17
   applymap: MyString
   displayactualprice: 1.5
   suggestedretailprice: 1.5
@@ -83,8 +83,8 @@ two:
   activationinformation: MyString
   color: MyString
   customdesign: MyString
-  activefrom: 2017-07-06
-  activeto: 2017-07-06
+  activefrom: 2017-07-17
+  activeto: 2017-07-17
   customlayoutupdate: MyString
   displayproductoptionsin: MyString
   pagelayout: MyString
