@@ -1,4 +1,4 @@
-<%= form_for(@course) do |f| %>
+<%= form_for @course, :html => { :class => "w3-container" }   do |f| %>
   <% if @course.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@course.errors.count, "error") %> prohibited this course from being saved:</h2>
@@ -12,60 +12,88 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :code %><br>
-    <%= f.text_field :code %>
+   
+    <%= f.text_field :code  , { :class => 'w3-input' }%>
+     <%= f.label :code  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :fullname %><br>
-    <%= f.text_field :fullname %>
+   
+    <%= f.text_field :fullname  , { :class => 'w3-input' }%>
+     <%= f.label :fullname  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :shortname %><br>
-    <%= f.text_field :shortname %>
+   
+    <%= f.text_field :shortname  , { :class => 'w3-input' }%>
+     <%= f.label :shortname  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :courseidnumber %><br>
-    <%= f.number_field :courseidnumber %>
+   
+    <%= f.number_field :courseidnumber  , { :class => 'w3-input' }%>
+     <%= f.label :courseidnumber  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :summary %><br>
-    <%= f.text_field :summary %>
+   
+    <%= f.text_field :summary  , { :class => 'w3-input' }%>
+     <%= f.label :summary  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :format %><br>
-    <%= f.text_field :format %>
+   
+    <%= f.text_field :format  , { :class => 'w3-input' }%>
+     <%= f.label :format  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :numberofweekstopics %><br>
-    <%= f.number_field :numberofweekstopics %>
+   
+    <%= f.number_field :numberofweekstopics  , { :class => 'w3-input' }%>
+     <%= f.label :numberofweekstopics  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :start %><br>
-    <%= f.date_select :start %>
+   
+    <%= f.date_select :start  , { :class => 'w3-input' }%>
+     <%= f.label :start  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :hiddensections %><br>
-    <%= f.text_field :hiddensections %>
+   
+    <%= f.text_field :hiddensections  , { :class => 'w3-input' }%>
+     <%= f.label :hiddensections  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :newsitemstoshow %><br>
-    <%= f.number_field :newsitemstoshow %>
+   
+    <%= f.number_field :newsitemstoshow  , { :class => 'w3-input' }%>
+     <%= f.label :newsitemstoshow  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :showgrades %><br>
-    <%= f.check_box :showgrades %>
+   
+    <%= f.check_box :showgrades  , { :class => 'w3-input' }%>
+     <%= f.label :showgrades  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :showactivityreports %><br>
-    <%= f.check_box :showactivityreports %>
+   
+    <%= f.check_box :showactivityreports  , { :class => 'w3-input' }%>
+     <%= f.label :showactivityreports  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :maxuploadsize %><br>
-    <%= f.number_field :maxuploadsize %>
+   
+    <%= f.number_field :maxuploadsize  , { :class => 'w3-input' }%>
+     <%= f.label :maxuploadsize  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :defaultroles %><br>
-    <%= f.text_field :defaultroles %>
+   
+    <%= f.text_field :defaultroles  , { :class => 'w3-input' }%>
+     <%= f.label :defaultroles  %><br>
+      <p></p>
   </div>
   <div class="actions">
     <%= f.submit %>

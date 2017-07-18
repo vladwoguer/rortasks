@@ -1,4 +1,4 @@
-<%= form_for(@bugzillaproduct) do |f| %>
+<%= form_for @bugzillaproduct, :html => { :class => "w3-container" }   do |f| %>
   <% if @bugzillaproduct.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@bugzillaproduct.errors.count, "error") %> prohibited this bugzillaproduct from being saved:</h2>
@@ -12,60 +12,88 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :code %><br>
-    <%= f.text_field :code %>
+   
+    <%= f.text_field :code  , { :class => 'w3-input' }%>
+     <%= f.label :code  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :product %><br>
-    <%= f.text_field :product %>
+   
+    <%= f.text_field :product  , { :class => 'w3-input' }%>
+     <%= f.label :product  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_field :description %>
+   
+    <%= f.text_field :description  , { :class => 'w3-input' }%>
+     <%= f.label :description  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :openforbugentry %><br>
-    <%= f.check_box :openforbugentry %>
+   
+    <%= f.check_box :openforbugentry  , { :class => 'w3-input' }%>
+     <%= f.label :openforbugentry  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :enableunconfirmedstatus %><br>
-    <%= f.check_box :enableunconfirmedstatus %>
+   
+    <%= f.check_box :enableunconfirmedstatus  , { :class => 'w3-input' }%>
+     <%= f.label :enableunconfirmedstatus  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :maxvotesperperson %><br>
-    <%= f.number_field :maxvotesperperson %>
+   
+    <%= f.number_field :maxvotesperperson  , { :class => 'w3-input' }%>
+     <%= f.label :maxvotesperperson  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :maxvotespersonperbug %><br>
-    <%= f.number_field :maxvotespersonperbug %>
+   
+    <%= f.number_field :maxvotespersonperbug  , { :class => 'w3-input' }%>
+     <%= f.label :maxvotespersonperbug  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :confirmbugsvotes %><br>
-    <%= f.number_field :confirmbugsvotes %>
+   
+    <%= f.number_field :confirmbugsvotes  , { :class => 'w3-input' }%>
+     <%= f.label :confirmbugsvotes  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :version %><br>
-    <%= f.text_field :version %>
+   
+    <%= f.text_field :version  , { :class => 'w3-input' }%>
+     <%= f.label :version  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :createchartdatasets %><br>
-    <%= f.check_box :createchartdatasets %>
+   
+    <%= f.check_box :createchartdatasets  , { :class => 'w3-input' }%>
+     <%= f.label :createchartdatasets  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :component %><br>
-    <%= f.text_field :component %>
+   
+    <%= f.text_field :component  , { :class => 'w3-input' }%>
+     <%= f.label :component  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :componentdescription %><br>
-    <%= f.text_field :componentdescription %>
+   
+    <%= f.text_field :componentdescription  , { :class => 'w3-input' }%>
+     <%= f.label :componentdescription  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :defaultassignee %><br>
-    <%= f.text_field :defaultassignee %>
+   
+    <%= f.text_field :defaultassignee  , { :class => 'w3-input' }%>
+     <%= f.label :defaultassignee  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :defaultcclist %><br>
-    <%= f.text_field :defaultcclist %>
+   
+    <%= f.text_field :defaultcclist  , { :class => 'w3-input' }%>
+     <%= f.label :defaultcclist  %><br>
+      <p></p>
   </div>
   <div class="actions">
     <%= f.submit %>

@@ -1,4 +1,4 @@
-<%= form_for(@quiz) do |f| %>
+<%= form_for @quiz, :html => { :class => "w3-container" }   do |f| %>
   <% if @quiz.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@quiz.errors.count, "error") %> prohibited this quiz from being saved:</h2>
@@ -12,52 +12,76 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :code %><br>
-    <%= f.text_field :code %>
+   
+    <%= f.text_field :code  , { :class => 'w3-input' }%>
+     <%= f.label :code  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+   
+    <%= f.text_field :name  , { :class => 'w3-input' }%>
+     <%= f.label :name  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_field :description %>
+   
+    <%= f.text_field :description  , { :class => 'w3-input' }%>
+     <%= f.label :description  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :displaydescription %><br>
-    <%= f.check_box :displaydescription %>
+   
+    <%= f.check_box :displaydescription  , { :class => 'w3-input' }%>
+     <%= f.label :displaydescription  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :open %><br>
-    <%= f.datetime_select :open %>
+   
+    <%= f.datetime_select :open  , { :class => 'w3-input' }%>
+     <%= f.label :open  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :close %><br>
-    <%= f.datetime_select :close %>
+   
+    <%= f.datetime_select :close  , { :class => 'w3-input' }%>
+     <%= f.label :close  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :timelimit %><br>
-    <%= f.number_field :timelimit %>
+   
+    <%= f.number_field :timelimit  , { :class => 'w3-input' }%>
+     <%= f.label :timelimit  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :whentimeexpires %><br>
-    <%= f.text_field :whentimeexpires %>
+   
+    <%= f.text_field :whentimeexpires  , { :class => 'w3-input' }%>
+     <%= f.label :whentimeexpires  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :submissiongraceperiod %><br>
-    <%= f.number_field :submissiongraceperiod %>
+   
+    <%= f.number_field :submissiongraceperiod  , { :class => 'w3-input' }%>
+     <%= f.label :submissiongraceperiod  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :gradecategory %><br>
-    <%= f.text_field :gradecategory %>
+   
+    <%= f.text_field :gradecategory  , { :class => 'w3-input' }%>
+     <%= f.label :gradecategory  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :attemptsallowed %><br>
-    <%= f.text_field :attemptsallowed %>
+   
+    <%= f.text_field :attemptsallowed  , { :class => 'w3-input' }%>
+     <%= f.label :attemptsallowed  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :gradingmethod %><br>
-    <%= f.text_field :gradingmethod %>
+   
+    <%= f.text_field :gradingmethod  , { :class => 'w3-input' }%>
+     <%= f.label :gradingmethod  %><br>
+      <p></p>
   </div>
   <div class="actions">
     <%= f.submit %>

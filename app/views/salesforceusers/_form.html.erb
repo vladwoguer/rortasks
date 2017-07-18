@@ -1,4 +1,4 @@
-<%= form_for(@salesforceuser) do |f| %>
+<%= form_for @salesforceuser, :html => { :class => "w3-container" }   do |f| %>
   <% if @salesforceuser.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@salesforceuser.errors.count, "error") %> prohibited this salesforceuser from being saved:</h2>
@@ -12,112 +12,166 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+   
+    <%= f.text_field :name  , { :class => 'w3-input' }%>
+     <%= f.label :name  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :alias %><br>
-    <%= f.text_field :alias %>
+   
+    <%= f.text_field :alias  , { :class => 'w3-input' }%>
+     <%= f.label :alias  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
+   
+    <%= f.text_field :email  , { :class => 'w3-input' }%>
+     <%= f.label :email  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :username %><br>
-    <%= f.text_field :username %>
+   
+    <%= f.text_field :username  , { :class => 'w3-input' }%>
+     <%= f.label :username  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :communitynickname %><br>
-    <%= f.text_field :communitynickname %>
+   
+    <%= f.text_field :communitynickname  , { :class => 'w3-input' }%>
+     <%= f.label :communitynickname  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+   
+    <%= f.text_field :title  , { :class => 'w3-input' }%>
+     <%= f.label :title  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :company %><br>
-    <%= f.text_field :company %>
+   
+    <%= f.text_field :company  , { :class => 'w3-input' }%>
+     <%= f.label :company  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :department %><br>
-    <%= f.text_field :department %>
+   
+    <%= f.text_field :department  , { :class => 'w3-input' }%>
+     <%= f.label :department  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :division %><br>
-    <%= f.text_field :division %>
+   
+    <%= f.text_field :division  , { :class => 'w3-input' }%>
+     <%= f.label :division  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :address %><br>
-    <%= f.text_field :address %>
+   
+    <%= f.text_field :address  , { :class => 'w3-input' }%>
+     <%= f.label :address  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :timezone %><br>
-    <%= f.text_field :timezone %>
+   
+    <%= f.text_field :timezone  , { :class => 'w3-input' }%>
+     <%= f.label :timezone  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :locale %><br>
-    <%= f.text_field :locale %>
+   
+    <%= f.text_field :locale  , { :class => 'w3-input' }%>
+     <%= f.label :locale  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :language %><br>
-    <%= f.text_field :language %>
+   
+    <%= f.text_field :language  , { :class => 'w3-input' }%>
+     <%= f.label :language  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :delegatedapprover %><br>
-    <%= f.text_field :delegatedapprover %>
+   
+    <%= f.text_field :delegatedapprover  , { :class => 'w3-input' }%>
+     <%= f.label :delegatedapprover  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :manager %><br>
-    <%= f.text_field :manager %>
+   
+    <%= f.text_field :manager  , { :class => 'w3-input' }%>
+     <%= f.label :manager  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :role %><br>
-    <%= f.text_field :role %>
+   
+    <%= f.text_field :role  , { :class => 'w3-input' }%>
+     <%= f.label :role  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :userlicense %><br>
-    <%= f.text_field :userlicense %>
+   
+    <%= f.text_field :userlicense  , { :class => 'w3-input' }%>
+     <%= f.label :userlicense  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :profile %><br>
-    <%= f.text_field :profile %>
+   
+    <%= f.text_field :profile  , { :class => 'w3-input' }%>
+     <%= f.label :profile  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :active %><br>
-    <%= f.check_box :active %>
+   
+    <%= f.check_box :active  , { :class => 'w3-input' }%>
+     <%= f.label :active  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :marketinguser %><br>
-    <%= f.check_box :marketinguser %>
+   
+    <%= f.check_box :marketinguser  , { :class => 'w3-input' }%>
+     <%= f.label :marketinguser  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :offlineuser %><br>
-    <%= f.check_box :offlineuser %>
+   
+    <%= f.check_box :offlineuser  , { :class => 'w3-input' }%>
+     <%= f.label :offlineuser  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :knowledgeuser %><br>
-    <%= f.check_box :knowledgeuser %>
+   
+    <%= f.check_box :knowledgeuser  , { :class => 'w3-input' }%>
+     <%= f.label :knowledgeuser  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :forcecomflowuser %><br>
-    <%= f.check_box :forcecomflowuser %>
+   
+    <%= f.check_box :forcecomflowuser  , { :class => 'w3-input' }%>
+     <%= f.label :forcecomflowuser  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :serviceclouduser %><br>
-    <%= f.check_box :serviceclouduser %>
+   
+    <%= f.check_box :serviceclouduser  , { :class => 'w3-input' }%>
+     <%= f.label :serviceclouduser  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :sitecomcontributoruser %><br>
-    <%= f.check_box :sitecomcontributoruser %>
+   
+    <%= f.check_box :sitecomcontributoruser  , { :class => 'w3-input' }%>
+     <%= f.label :sitecomcontributoruser  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :sitecompublisheruser %><br>
-    <%= f.check_box :sitecompublisheruser %>
+   
+    <%= f.check_box :sitecompublisheruser  , { :class => 'w3-input' }%>
+     <%= f.label :sitecompublisheruser  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :mobileuser %><br>
-    <%= f.check_box :mobileuser %>
+   
+    <%= f.check_box :mobileuser  , { :class => 'w3-input' }%>
+     <%= f.label :mobileuser  %><br>
+      <p></p>
   </div>
   <div class="actions">
     <%= f.submit %>

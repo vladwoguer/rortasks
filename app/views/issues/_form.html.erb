@@ -1,4 +1,4 @@
-<%= form_for(@issue) do |f| %>
+<%= form_for @issue, :html => { :class => "w3-container" }   do |f| %>
   <% if @issue.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@issue.errors.count, "error") %> prohibited this issue from being saved:</h2>
@@ -12,68 +12,100 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :code %><br>
-    <%= f.text_field :code %>
+   
+    <%= f.text_field :code  , { :class => 'w3-input' }%>
+     <%= f.label :code  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :project %><br>
-    <%= f.text_field :project %>
+   
+    <%= f.text_field :project  , { :class => 'w3-input' }%>
+     <%= f.label :project  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :issuetype %><br>
-    <%= f.text_field :issuetype %>
+   
+    <%= f.text_field :issuetype  , { :class => 'w3-input' }%>
+     <%= f.label :issuetype  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :summary %><br>
-    <%= f.text_field :summary %>
+   
+    <%= f.text_field :summary  , { :class => 'w3-input' }%>
+     <%= f.label :summary  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :storypoints %><br>
-    <%= f.number_field :storypoints %>
+   
+    <%= f.number_field :storypoints  , { :class => 'w3-input' }%>
+     <%= f.label :storypoints  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :priority %><br>
-    <%= f.text_field :priority %>
+   
+    <%= f.text_field :priority  , { :class => 'w3-input' }%>
+     <%= f.label :priority  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :duedate %><br>
-    <%= f.date_select :duedate %>
+   
+    <%= f.date_select :duedate  , { :class => 'w3-input' }%>
+     <%= f.label :duedate  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :components %><br>
-    <%= f.text_field :components %>
+   
+    <%= f.text_field :components  , { :class => 'w3-input' }%>
+     <%= f.label :components  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :affectsversions %><br>
-    <%= f.text_field :affectsversions %>
+   
+    <%= f.text_field :affectsversions  , { :class => 'w3-input' }%>
+     <%= f.label :affectsversions  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :fixversions %><br>
-    <%= f.text_field :fixversions %>
+   
+    <%= f.text_field :fixversions  , { :class => 'w3-input' }%>
+     <%= f.label :fixversions  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :assignee %><br>
-    <%= f.text_field :assignee %>
+   
+    <%= f.text_field :assignee  , { :class => 'w3-input' }%>
+     <%= f.label :assignee  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :environment %><br>
-    <%= f.text_field :environment %>
+   
+    <%= f.text_field :environment  , { :class => 'w3-input' }%>
+     <%= f.label :environment  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_field :description %>
+   
+    <%= f.text_field :description  , { :class => 'w3-input' }%>
+     <%= f.label :description  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :labels %><br>
-    <%= f.text_field :labels %>
+   
+    <%= f.text_field :labels  , { :class => 'w3-input' }%>
+     <%= f.label :labels  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :epic %><br>
-    <%= f.text_field :epic %>
+   
+    <%= f.text_field :epic  , { :class => 'w3-input' }%>
+     <%= f.label :epic  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :sprint %><br>
-    <%= f.text_field :sprint %>
+   
+    <%= f.text_field :sprint  , { :class => 'w3-input' }%>
+     <%= f.label :sprint  %><br>
+      <p></p>
   </div>
   <div class="actions">
     <%= f.submit %>

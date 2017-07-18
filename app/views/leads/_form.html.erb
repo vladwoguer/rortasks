@@ -1,4 +1,4 @@
-<%= form_for(@lead) do |f| %>
+<%= form_for @lead, :html => { :class => "w3-container" }   do |f| %>
   <% if @lead.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@lead.errors.count, "error") %> prohibited this lead from being saved:</h2>
@@ -12,84 +12,124 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :code %><br>
-    <%= f.text_field :code %>
+   
+    <%= f.text_field :code  , { :class => 'w3-input' }%>
+     <%= f.label :code  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :owner %><br>
-    <%= f.text_field :owner %>
+   
+    <%= f.text_field :owner  , { :class => 'w3-input' }%>
+     <%= f.label :owner  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :firstname %><br>
-    <%= f.text_field :firstname %>
+   
+    <%= f.text_field :firstname  , { :class => 'w3-input' }%>
+     <%= f.label :firstname  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :lastname %><br>
-    <%= f.text_field :lastname %>
+   
+    <%= f.text_field :lastname  , { :class => 'w3-input' }%>
+     <%= f.label :lastname  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :company %><br>
-    <%= f.text_field :company %>
+   
+    <%= f.text_field :company  , { :class => 'w3-input' }%>
+     <%= f.label :company  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+   
+    <%= f.text_field :title  , { :class => 'w3-input' }%>
+     <%= f.label :title  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :status %><br>
-    <%= f.text_field :status %>
+   
+    <%= f.text_field :status  , { :class => 'w3-input' }%>
+     <%= f.label :status  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :phone %><br>
-    <%= f.text_field :phone %>
+   
+    <%= f.text_field :phone  , { :class => 'w3-input' }%>
+     <%= f.label :phone  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
+   
+    <%= f.text_field :email  , { :class => 'w3-input' }%>
+     <%= f.label :email  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :street %><br>
-    <%= f.text_field :street %>
+   
+    <%= f.text_field :street  , { :class => 'w3-input' }%>
+     <%= f.label :street  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :city %><br>
-    <%= f.text_field :city %>
+   
+    <%= f.text_field :city  , { :class => 'w3-input' }%>
+     <%= f.label :city  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :state %><br>
-    <%= f.text_field :state %>
+   
+    <%= f.text_field :state  , { :class => 'w3-input' }%>
+     <%= f.label :state  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :zipcode %><br>
-    <%= f.text_field :zipcode %>
+   
+    <%= f.text_field :zipcode  , { :class => 'w3-input' }%>
+     <%= f.label :zipcode  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :county %><br>
-    <%= f.text_field :county %>
+   
+    <%= f.text_field :county  , { :class => 'w3-input' }%>
+     <%= f.label :county  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :website %><br>
-    <%= f.text_field :website %>
+   
+    <%= f.text_field :website  , { :class => 'w3-input' }%>
+     <%= f.label :website  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :numberofemployees %><br>
-    <%= f.number_field :numberofemployees %>
+   
+    <%= f.number_field :numberofemployees  , { :class => 'w3-input' }%>
+     <%= f.label :numberofemployees  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :annualrevenue %><br>
-    <%= f.number_field :annualrevenue %>
+   
+    <%= f.number_field :annualrevenue  , { :class => 'w3-input' }%>
+     <%= f.label :annualrevenue  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :source %><br>
-    <%= f.text_field :source %>
+   
+    <%= f.text_field :source  , { :class => 'w3-input' }%>
+     <%= f.label :source  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :industry %><br>
-    <%= f.text_field :industry %>
+   
+    <%= f.text_field :industry  , { :class => 'w3-input' }%>
+     <%= f.label :industry  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_field :description %>
+   
+    <%= f.text_field :description  , { :class => 'w3-input' }%>
+     <%= f.label :description  %><br>
+      <p></p>
   </div>
   <div class="actions">
     <%= f.submit %>

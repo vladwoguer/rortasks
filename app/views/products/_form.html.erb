@@ -1,4 +1,4 @@
-<%= form_for(@product) do |f| %>
+<%= form_for @product, :html => { :class => "w3-container" }   do |f| %>
   <% if @product.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
@@ -12,200 +12,298 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :code %><br>
-    <%= f.text_field :code %>
+   
+    <%= f.text_field :code  , { :class => 'w3-input' }%>
+     <%= f.label :code  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+   
+    <%= f.text_field :name  , { :class => 'w3-input' }%>
+     <%= f.label :name  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :model %><br>
-    <%= f.text_field :model %>
+   
+    <%= f.text_field :model  , { :class => 'w3-input' }%>
+     <%= f.label :model  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :sku %><br>
-    <%= f.text_field :sku %>
+   
+    <%= f.text_field :sku  , { :class => 'w3-input' }%>
+     <%= f.label :sku  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :weight %><br>
-    <%= f.text_field :weight %>
+   
+    <%= f.text_field :weight  , { :class => 'w3-input' }%>
+     <%= f.label :weight  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :manufacturer %><br>
-    <%= f.text_field :manufacturer %>
+   
+    <%= f.text_field :manufacturer  , { :class => 'w3-input' }%>
+     <%= f.label :manufacturer  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :status %><br>
-    <%= f.text_field :status %>
+   
+    <%= f.text_field :status  , { :class => 'w3-input' }%>
+     <%= f.label :status  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :taxclass %><br>
-    <%= f.text_field :taxclass %>
+   
+    <%= f.text_field :taxclass  , { :class => 'w3-input' }%>
+     <%= f.label :taxclass  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :urlkey %><br>
-    <%= f.text_field :urlkey %>
+   
+    <%= f.text_field :urlkey  , { :class => 'w3-input' }%>
+     <%= f.label :urlkey  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :visibility %><br>
-    <%= f.text_field :visibility %>
+   
+    <%= f.text_field :visibility  , { :class => 'w3-input' }%>
+     <%= f.label :visibility  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :setproductasnewfromdate %><br>
-    <%= f.date_select :setproductasnewfromdate %>
+   
+    <%= f.date_select :setproductasnewfromdate  , { :class => 'w3-input' }%>
+     <%= f.label :setproductasnewfromdate  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :setproductasnewtodate %><br>
-    <%= f.date_select :setproductasnewtodate %>
+   
+    <%= f.date_select :setproductasnewtodate  , { :class => 'w3-input' }%>
+     <%= f.label :setproductasnewtodate  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :countryofmanufacture %><br>
-    <%= f.text_field :countryofmanufacture %>
+   
+    <%= f.text_field :countryofmanufacture  , { :class => 'w3-input' }%>
+     <%= f.label :countryofmanufacture  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :price %><br>
-    <%= f.text_field :price %>
+   
+    <%= f.text_field :price  , { :class => 'w3-input' }%>
+     <%= f.label :price  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :cost %><br>
-    <%= f.text_field :cost %>
+   
+    <%= f.text_field :cost  , { :class => 'w3-input' }%>
+     <%= f.label :cost  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :specialprice %><br>
-    <%= f.text_field :specialprice %>
+   
+    <%= f.text_field :specialprice  , { :class => 'w3-input' }%>
+     <%= f.label :specialprice  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :specialpricefromdate %><br>
-    <%= f.date_select :specialpricefromdate %>
+   
+    <%= f.date_select :specialpricefromdate  , { :class => 'w3-input' }%>
+     <%= f.label :specialpricefromdate  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :specialpricetodate %><br>
-    <%= f.date_select :specialpricetodate %>
+   
+    <%= f.date_select :specialpricetodate  , { :class => 'w3-input' }%>
+     <%= f.label :specialpricetodate  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :applymap %><br>
-    <%= f.text_field :applymap %>
+   
+    <%= f.text_field :applymap  , { :class => 'w3-input' }%>
+     <%= f.label :applymap  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :displayactualprice %><br>
-    <%= f.text_field :displayactualprice %>
+   
+    <%= f.text_field :displayactualprice  , { :class => 'w3-input' }%>
+     <%= f.label :displayactualprice  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :suggestedretailprice %><br>
-    <%= f.text_field :suggestedretailprice %>
+   
+    <%= f.text_field :suggestedretailprice  , { :class => 'w3-input' }%>
+     <%= f.label :suggestedretailprice  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :metatitle %><br>
-    <%= f.text_field :metatitle %>
+   
+    <%= f.text_field :metatitle  , { :class => 'w3-input' }%>
+     <%= f.label :metatitle  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :metakeywords %><br>
-    <%= f.text_field :metakeywords %>
+   
+    <%= f.text_field :metakeywords  , { :class => 'w3-input' }%>
+     <%= f.label :metakeywords  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :metadescription %><br>
-    <%= f.text_field :metadescription %>
+   
+    <%= f.text_field :metadescription  , { :class => 'w3-input' }%>
+     <%= f.label :metadescription  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :shortdescription %><br>
-    <%= f.text_field :shortdescription %>
+   
+    <%= f.text_field :shortdescription  , { :class => 'w3-input' }%>
+     <%= f.label :shortdescription  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_field :description %>
+   
+    <%= f.text_field :description  , { :class => 'w3-input' }%>
+     <%= f.label :description  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :indepth %><br>
-    <%= f.text_field :indepth %>
+   
+    <%= f.text_field :indepth  , { :class => 'w3-input' }%>
+     <%= f.label :indepth  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :dimensions %><br>
-    <%= f.text_field :dimensions %>
+   
+    <%= f.text_field :dimensions  , { :class => 'w3-input' }%>
+     <%= f.label :dimensions  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :activationinformation %><br>
-    <%= f.text_field :activationinformation %>
+   
+    <%= f.text_field :activationinformation  , { :class => 'w3-input' }%>
+     <%= f.label :activationinformation  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :color %><br>
-    <%= f.text_field :color %>
+   
+    <%= f.text_field :color  , { :class => 'w3-input' }%>
+     <%= f.label :color  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :customdesign %><br>
-    <%= f.text_field :customdesign %>
+   
+    <%= f.text_field :customdesign  , { :class => 'w3-input' }%>
+     <%= f.label :customdesign  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :activefrom %><br>
-    <%= f.date_select :activefrom %>
+   
+    <%= f.date_select :activefrom  , { :class => 'w3-input' }%>
+     <%= f.label :activefrom  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :activeto %><br>
-    <%= f.date_select :activeto %>
+   
+    <%= f.date_select :activeto  , { :class => 'w3-input' }%>
+     <%= f.label :activeto  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :customlayoutupdate %><br>
-    <%= f.text_field :customlayoutupdate %>
+   
+    <%= f.text_field :customlayoutupdate  , { :class => 'w3-input' }%>
+     <%= f.label :customlayoutupdate  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :displayproductoptionsin %><br>
-    <%= f.text_field :displayproductoptionsin %>
+   
+    <%= f.text_field :displayproductoptionsin  , { :class => 'w3-input' }%>
+     <%= f.label :displayproductoptionsin  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :pagelayout %><br>
-    <%= f.text_field :pagelayout %>
+   
+    <%= f.text_field :pagelayout  , { :class => 'w3-input' }%>
+     <%= f.label :pagelayout  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :enablerecurringprofile %><br>
-    <%= f.check_box :enablerecurringprofile %>
+   
+    <%= f.check_box :enablerecurringprofile  , { :class => 'w3-input' }%>
+     <%= f.label :enablerecurringprofile  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :allowgiftmessage %><br>
-    <%= f.check_box :allowgiftmessage %>
+   
+    <%= f.check_box :allowgiftmessage  , { :class => 'w3-input' }%>
+     <%= f.label :allowgiftmessage  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :managestock %><br>
-    <%= f.check_box :managestock %>
+   
+    <%= f.check_box :managestock  , { :class => 'w3-input' }%>
+     <%= f.label :managestock  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :qty %><br>
-    <%= f.text_field :qty %>
+   
+    <%= f.text_field :qty  , { :class => 'w3-input' }%>
+     <%= f.label :qty  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :qtyforitemsstatustobecomeoutofstock %><br>
-    <%= f.text_field :qtyforitemsstatustobecomeoutofstock %>
+   
+    <%= f.text_field :qtyforitemsstatustobecomeoutofstock  , { :class => 'w3-input' }%>
+     <%= f.label :qtyforitemsstatustobecomeoutofstock  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :minimumqtyallowedinshoppingcart %><br>
-    <%= f.text_field :minimumqtyallowedinshoppingcart %>
+   
+    <%= f.text_field :minimumqtyallowedinshoppingcart  , { :class => 'w3-input' }%>
+     <%= f.label :minimumqtyallowedinshoppingcart  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :maximumqtyallowedinshoppingcart %><br>
-    <%= f.text_field :maximumqtyallowedinshoppingcart %>
+   
+    <%= f.text_field :maximumqtyallowedinshoppingcart  , { :class => 'w3-input' }%>
+     <%= f.label :maximumqtyallowedinshoppingcart  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :qtyusesdecimals %><br>
-    <%= f.check_box :qtyusesdecimals %>
+   
+    <%= f.check_box :qtyusesdecimals  , { :class => 'w3-input' }%>
+     <%= f.label :qtyusesdecimals  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :backorders %><br>
-    <%= f.text_field :backorders %>
+   
+    <%= f.text_field :backorders  , { :class => 'w3-input' }%>
+     <%= f.label :backorders  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :notifyforquantitybelow %><br>
-    <%= f.text_field :notifyforquantitybelow %>
+   
+    <%= f.text_field :notifyforquantitybelow  , { :class => 'w3-input' }%>
+     <%= f.label :notifyforquantitybelow  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :enableqtyincrements %><br>
-    <%= f.check_box :enableqtyincrements %>
+   
+    <%= f.check_box :enableqtyincrements  , { :class => 'w3-input' }%>
+     <%= f.label :enableqtyincrements  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :stockavailability %><br>
-    <%= f.check_box :stockavailability %>
+   
+    <%= f.check_box :stockavailability  , { :class => 'w3-input' }%>
+     <%= f.label :stockavailability  %><br>
+      <p></p>
   </div>
   <div class="field">
-    <%= f.label :tags %><br>
-    <%= f.text_field :tags %>
+   
+    <%= f.text_field :tags  , { :class => 'w3-input' }%>
+     <%= f.label :tags  %><br>
+      <p></p>
   </div>
   <div class="actions">
     <%= f.submit %>
