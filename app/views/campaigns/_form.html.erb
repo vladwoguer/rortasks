@@ -13,59 +13,59 @@
 
   <div class="field">
     <%= f.label :code %><br>
-    <%= f.text_field :code %>
+   <%= f.text_field :code %>
   </div>
   <div class="field">
     <%= f.label :owner %><br>
-    <%= f.text_field :owner %>
+   <%= f.text_field :owner %>
   </div>
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+   <%= f.text_field :name %>
   </div>
   <div class="field">
     <%= f.label :active %><br>
-    <%= f.check_box :active %>
+   <%= f.check_box :active %>
   </div>
   <div class="field">
     <%= f.label :type %><br>
-    <%= f.text_field :type %>
+   <%= f.text_field :type %>
   </div>
   <div class="field">
     <%= f.label :status %><br>
-    <%= f.text_field :status %>
+   <%= f.text_field :status %>
   </div>
   <div class="field">
     <%= f.label :start %><br>
-    <%= f.date_select :start %>
+   <%= f.date_select :start %>
   </div>
   <div class="field">
     <%= f.label :end %><br>
-    <%= f.date_select :end %>
+   <%= f.date_select :end %>
   </div>
   <div class="field">
     <%= f.label :expectedrevenue %><br>
-    <%= f.number_field :expectedrevenue %>
+     <%= f.number_field :expectedrevenue, {min: 0, max: 500}  %>
   </div>
   <div class="field">
     <%= f.label :budgetedcost %><br>
-    <%= f.number_field :budgetedcost %>
+     <%= f.number_field :budgetedcost, {min: 0, max: 500}  %>
   </div>
   <div class="field">
     <%= f.label :actualcost %><br>
-    <%= f.number_field :actualcost %>
+     <%= f.number_field :actualcost, {min: 0, max: 500}  %>
   </div>
   <div class="field">
     <%= f.label :expectedresponse %><br>
-    <%= f.text_field :expectedresponse %>
+   <%= f.text_field :expectedresponse %>
   </div>
   <div class="field">
     <%= f.label :numsent %><br>
-    <%= f.number_field :numsent %>
+     <%= f.number_field :numsent, {min: 0, max: 500}  %>
   </div>
   <div class="field">
     <%= f.label :parentcampaign %><br>
-    <%= f.text_field :parentcampaign %>
+   <%= f.text_field :parentcampaign %>
   </div>
   <div class="actions">
     <%= f.submit %>

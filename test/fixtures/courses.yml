@@ -8,7 +8,7 @@ one:
   summary: MyString
   format: MyString
   numberofweekstopics: 1
-  start: 2017-07-06
+  start: 2017-07-18
   hiddensections: MyString
   newsitemstoshow: 1
   showgrades: false
@@ -24,7 +24,7 @@ two:
   summary: MyString
   format: MyString
   numberofweekstopics: 1
-  start: 2017-07-06
+  start: 2017-07-18
   hiddensections: MyString
   newsitemstoshow: 1
   showgrades: false

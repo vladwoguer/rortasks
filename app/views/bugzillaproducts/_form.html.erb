@@ -13,59 +13,59 @@
 
   <div class="field">
     <%= f.label :code %><br>
-    <%= f.text_field :code %>
+   <%= f.text_field :code %>
   </div>
   <div class="field">
     <%= f.label :product %><br>
-    <%= f.text_field :product %>
+   <%= f.text_field :product %>
   </div>
   <div class="field">
     <%= f.label :description %><br>
-    <%= f.text_field :description %>
+   <%= f.text_field :description %>
   </div>
   <div class="field">
     <%= f.label :openforbugentry %><br>
-    <%= f.check_box :openforbugentry %>
+   <%= f.check_box :openforbugentry %>
   </div>
   <div class="field">
     <%= f.label :enableunconfirmedstatus %><br>
-    <%= f.check_box :enableunconfirmedstatus %>
+   <%= f.check_box :enableunconfirmedstatus %>
   </div>
   <div class="field">
     <%= f.label :maxvotesperperson %><br>
-    <%= f.number_field :maxvotesperperson %>
+     <%= f.number_field :maxvotesperperson, {min: 0, max: 500}  %>
   </div>
   <div class="field">
     <%= f.label :maxvotespersonperbug %><br>
-    <%= f.number_field :maxvotespersonperbug %>
+     <%= f.number_field :maxvotespersonperbug, {min: 0, max: 500}  %>
   </div>
   <div class="field">
     <%= f.label :confirmbugsvotes %><br>
-    <%= f.number_field :confirmbugsvotes %>
+     <%= f.number_field :confirmbugsvotes, {min: 0, max: 500}  %>
   </div>
   <div class="field">
     <%= f.label :version %><br>
-    <%= f.text_field :version %>
+   <%= f.text_field :version %>
   </div>
   <div class="field">
     <%= f.label :createchartdatasets %><br>
-    <%= f.check_box :createchartdatasets %>
+   <%= f.check_box :createchartdatasets %>
   </div>
   <div class="field">
     <%= f.label :component %><br>
-    <%= f.text_field :component %>
+   <%= f.text_field :component %>
   </div>
   <div class="field">
     <%= f.label :componentdescription %><br>
-    <%= f.text_field :componentdescription %>
+   <%= f.text_field :componentdescription %>
   </div>
   <div class="field">
     <%= f.label :defaultassignee %><br>
-    <%= f.text_field :defaultassignee %>
+   <%= f.text_field :defaultassignee %>
   </div>
   <div class="field">
     <%= f.label :defaultcclist %><br>
-    <%= f.text_field :defaultcclist %>
+   <%= f.text_field :defaultcclist %>
   </div>
   <div class="actions">
     <%= f.submit %>

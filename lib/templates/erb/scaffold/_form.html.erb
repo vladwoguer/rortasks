@@ -22,7 +22,11 @@
     <%%= f.password_field :password_confirmation %>
 <% else -%>
     <%%= f.label :<%= attribute.column_name %> %><br>
-    <%%= f.<%= attribute.field_type %> :<%= attribute.column_name %> %>
+<% if attribute.type == :integer -%>
+     <%%= f.<%= attribute.field_type %> :<%= attribute.column_name %>, {min: 0, max: 500}  %>
+<% else -%>
+   <%%= f.<%= attribute.field_type %> :<%= attribute.column_name %> %>
+<% end -%>
 <% end -%>
   </div>
 <% end -%>
