@@ -13,31 +13,51 @@
 
   <div class="field">
     <%= f.label :code %><br>
+        
     <%= f.text_field :code %>
+    
   </div>
   <div class="field">
     <%= f.label :title %><br>
+        
     <%= f.text_field :title %>
+    
   </div>
   <div class="field">
     <%= f.label :summary %><br>
+        
     <%= f.text_field :summary %>
+    
   </div>
   <div class="field">
     <%= f.label :preconditions %><br>
+        
     <%= f.text_field :preconditions %>
+    
   </div>
   <div class="field">
     <%= f.label :status %><br>
-    <%= f.text_field :status %>
+        <datalist id=testcase_status_list>
+  <option value="Open">
+  <option value="Closed">
+  <option value="On going">
+  <option value="Review">
+  <option value="Cancelled">
+</datalist>
+<input  list=testcase_status_list id= testcase_status>
+
   </div>
   <div class="field">
     <%= f.label :importance %><br>
+        
     <%= f.text_field :importance %>
+    
   </div>
   <div class="field">
     <%= f.label :minutes %><br>
+        
     <%= f.number_field :minutes %>
+    
   </div>
   <div class="actions">
     <%= f.submit %>

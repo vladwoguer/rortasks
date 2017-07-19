@@ -13,59 +13,93 @@
 
   <div class="field">
     <%= f.label :code %><br>
+        
     <%= f.text_field :code %>
+    
   </div>
   <div class="field">
     <%= f.label :owner %><br>
+        
     <%= f.text_field :owner %>
+    
   </div>
   <div class="field">
     <%= f.label :name %><br>
+        
     <%= f.text_field :name %>
+    
   </div>
   <div class="field">
     <%= f.label :active %><br>
+        
     <%= f.check_box :active %>
+    
   </div>
   <div class="field">
     <%= f.label :type %><br>
+        
     <%= f.text_field :type %>
+    
   </div>
   <div class="field">
     <%= f.label :status %><br>
-    <%= f.text_field :status %>
+        <datalist id=campaign_status_list>
+  <option value="Open">
+  <option value="Closed">
+  <option value="On going">
+  <option value="Review">
+  <option value="Cancelled">
+</datalist>
+<input  list=campaign_status_list id= campaign_status>
+
   </div>
   <div class="field">
     <%= f.label :start %><br>
+        
     <%= f.date_select :start %>
+    
   </div>
   <div class="field">
     <%= f.label :end %><br>
+        
     <%= f.date_select :end %>
+    
   </div>
   <div class="field">
     <%= f.label :expectedrevenue %><br>
+        
     <%= f.number_field :expectedrevenue %>
+    
   </div>
   <div class="field">
     <%= f.label :budgetedcost %><br>
+        
     <%= f.number_field :budgetedcost %>
+    
   </div>
   <div class="field">
     <%= f.label :actualcost %><br>
+        
     <%= f.number_field :actualcost %>
+    
   </div>
   <div class="field">
     <%= f.label :expectedresponse %><br>
+        
     <%= f.text_field :expectedresponse %>
+    
   </div>
   <div class="field">
     <%= f.label :numsent %><br>
+        
     <%= f.number_field :numsent %>
+    
   </div>
   <div class="field">
     <%= f.label :parentcampaign %><br>
+        
     <%= f.text_field :parentcampaign %>
+    
   </div>
   <div class="actions">
     <%= f.submit %>

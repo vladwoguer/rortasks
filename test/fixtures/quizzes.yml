@@ -5,8 +5,8 @@ one:
   name: MyString
   description: MyString
   displaydescription: false
-  open: 2017-07-06 00:52:36
-  close: 2017-07-06 00:52:36
+  open: 2017-07-18 21:29:47
+  close: 2017-07-18 21:29:47
   timelimit: 1
   whentimeexpires: MyString
   submissiongraceperiod: 1
@@ -19,8 +19,8 @@ two:
   name: MyString
   description: MyString
   displaydescription: false
-  open: 2017-07-06 00:52:36
-  close: 2017-07-06 00:52:36
+  open: 2017-07-18 21:29:47
+  close: 2017-07-18 21:29:47
   timelimit: 1
   whentimeexpires: MyString
   submissiongraceperiod: 1

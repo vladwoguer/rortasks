@@ -22,7 +22,20 @@
     <%%= f.password_field :password_confirmation %>
 <% else -%>
     <%%= f.label :<%= attribute.column_name %> %><br>
+    <% if attribute.column_name != 'status' -%>
+    
     <%%= f.<%= attribute.field_type %> :<%= attribute.column_name %> %>
+    <% else -%>
+    <datalist <%= "id=" + singular_table_name + "_status_list"%>>
+  <option value="Open">
+  <option value="Closed">
+  <option value="On going">
+  <option value="Review">
+  <option value="Cancelled">
+</datalist>
+<input  <%= "list="+singular_table_name + "_status_list"%> <%= "id= "+singular_table_name + "_status"%>>
+<% end -%>
+
 <% end -%>
   </div>
 <% end -%>
