@@ -13,95 +13,144 @@
 
   <div class="field">
     <%= f.label :code %><br>
-    <%= f.text_field :code %>
+               <%= f.text_field :code %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :product %><br>
-    <%= f.text_field :product %>
+               <%= f.text_field :product %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :component %><br>
-    <%= f.text_field :component %>
+               <%= f.text_field :component %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :version %><br>
-    <%= f.text_field :version %>
+               <%= f.text_field :version %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :summary %><br>
-    <%= f.text_field :summary %>
+            
+    <%= f.text_area(:summary, cols: 50, rows: 5)  %>
+
+        
+  
   </div>
   <div class="field">
     <%= f.label :description %><br>
-    <%= f.text_field :description %>
+           <%= f.text_area(:description, cols: 50, rows: 8)%>
+   
+          
+  
   </div>
   <div class="field">
     <%= f.label :hardware %><br>
-    <%= f.text_field :hardware %>
+               <%= f.text_field :hardware %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :importance %><br>
-    <%= f.number_field :importance %>
+               <%= f.number_field :importance %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :targetmilestone %><br>
-    <%= f.text_field :targetmilestone %>
+               <%= f.text_field :targetmilestone %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :assignedto %><br>
-    <%= f.text_field :assignedto %>
+               <%= f.text_field :assignedto %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :qacontact %><br>
-    <%= f.text_field :qacontact %>
+               <%= f.text_field :qacontact %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :url %><br>
-    <%= f.text_field :url %>
+               <%= f.text_field :url %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :whiteboard %><br>
-    <%= f.text_field :whiteboard %>
+               <%= f.text_field :whiteboard %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :keywords %><br>
-    <%= f.text_field :keywords %>
+               <%= f.text_field :keywords %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :tags %><br>
-    <%= f.text_field :tags %>
+               <%= f.text_field :tags %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :dependson %><br>
-    <%= f.text_field :dependson %>
+               <%= f.text_field :dependson %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :blocks %><br>
-    <%= f.text_field :blocks %>
+               <%= f.text_field :blocks %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :origestimated %><br>
-    <%= f.text_field :origestimated %>
+               <%= f.text_field :origestimated %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :hoursworked %><br>
-    <%= f.text_field :hoursworked %>
+               <%= f.text_field :hoursworked %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :hoursleft %><br>
-    <%= f.text_field :hoursleft %>
+               <%= f.text_field :hoursleft %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :deadline %><br>
-    <%= f.date_select :deadline %>
+               <%= f.date_select :deadline %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :additionalcomments %><br>
-    <%= f.text_field :additionalcomments %>
+               <%= f.text_field :additionalcomments %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :status %><br>
-    <%= f.text_field :status %>
+               <%= f.text_field :status %>
+     
+  
   </div>
   <div class="actions">
     <%= f.submit %>

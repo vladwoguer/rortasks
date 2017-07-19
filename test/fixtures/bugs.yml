@@ -21,7 +21,7 @@ one:
   origestimated: 1.5
   hoursworked: 1.5
   hoursleft: 1.5
-  deadline: 2017-07-06
+  deadline: 2017-07-18
   additionalcomments: MyString
   status: MyString
 
@@ -46,6 +46,6 @@ two:
   origestimated: 1.5
   hoursworked: 1.5
   hoursleft: 1.5
-  deadline: 2017-07-06
+  deadline: 2017-07-18
   additionalcomments: MyString
   status: MyString

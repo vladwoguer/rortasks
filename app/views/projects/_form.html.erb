@@ -13,39 +13,58 @@
 
   <div class="field">
     <%= f.label :name %><br>
-    <%= f.text_field :name %>
+               <%= f.text_field :name %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :description %><br>
-    <%= f.text_field :description %>
+           <%= f.text_area(:description, cols: 50, rows: 8)%>
+   
+          
+  
   </div>
   <div class="field">
     <%= f.label :identifier %><br>
-    <%= f.text_field :identifier %>
+               <%= f.text_field :identifier %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :homepage %><br>
-    <%= f.text_field :homepage %>
+               <%= f.text_field :homepage %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :public %><br>
-    <%= f.check_box :public %>
+               <%= f.check_box :public %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :subprojectof %><br>
-    <%= f.text_field :subprojectof %>
+               <%= f.text_field :subprojectof %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :bugtracker %><br>
-    <%= f.check_box :bugtracker %>
+               <%= f.check_box :bugtracker %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :featuretracker %><br>
-    <%= f.check_box :featuretracker %>
+               <%= f.check_box :featuretracker %>
+     
+  
   </div>
   <div class="field">
     <%= f.label :supporttracker %><br>
-    <%= f.check_box :supporttracker %>
+               <%= f.check_box :supporttracker %>
+     
+  
   </div>
   <div class="actions">
     <%= f.submit %>
